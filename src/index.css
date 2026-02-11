@@ -87,3 +87,78 @@ a {
 .btn:hover {
   background: rgba(255, 255, 255, .14)
 }
+
+.status {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(0, 0, 0, .18)
+}
+
+.status__title {
+  font-weight: 700;
+  margin-bottom: 4px
+}
+
+.status__msg {
+  color: rgba(233, 238, 252, .76)
+}
+
+.subtitle {
+  margin: 0
+}
+
+.list__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, .08)
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .08)
+}
+
+.row:hover {
+  opacity: .92
+}
+
+.row__date {
+  font-variant-numeric: tabular-nums
+}
+
+.row__temps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .08)
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap
+}
