@@ -23,7 +23,7 @@ export default function Home() {
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name"
         />
-        <button className="btn" type="submit">Search</button>
+        <button className="btn" type="submit" disabled={!city.trim()}>Search</button>
       </form>
     </section>
   )

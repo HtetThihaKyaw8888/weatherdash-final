@@ -32,7 +32,6 @@ export default function Forecast() {
       } finally {
         if (!cancelled) setLoading(false)
       }
-
     }
 
     run()
@@ -66,6 +65,9 @@ export default function Forecast() {
   return (
     <section className="card">
       <h1 className="title">Forecast</h1>
+      <div className="actions">
+        <Link className="btn" to="/">Back</Link>
+      </div>
       <ForecastList cityLabel={`${place.name}, ${place.country}`} daily={daily} />
       <div className="actions">
         <Link className="btn" to="/">Search another city</Link>
